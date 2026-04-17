@@ -6,35 +6,35 @@ const certificates = [
     title: 'Deep Learning and Deployment on Web',
     issuer: 'DevTown',
     date: 'Feb 2024',
-    image: '/certificates/devtown.jpg',
+    image: 'devtown.jpg',
     link: 'https://drive.google.com/drive/folders/1dRJtoMx671GPVag19IYGbPw1b4styQWR'
   },
   {
     title: 'Language Principle & Finite Automata Theory',
     issuer: 'Infosys Springboard',
     date: 'Aug 2025',
-    image: '/certificates/infosys.jpg',
+    image: 'infosys.jpg',
     link: 'https://drive.google.com/drive/folders/1dRJtoMx671GPVag19IYGbPw1b4styQWR'
   },
   {
     title: 'CyberSec Symposium 2.0',
     issuer: 'iGen Community & LPU',
     date: 'Apr 2024',
-    image: '/certificates/cybersec.jpg',
+    image: 'symposium.jpg',
     link: 'https://drive.google.com/drive/folders/1dRJtoMx671GPVag19IYGbPw1b4styQWR'
   },
   {
     title: 'The Bits and Bytes of Computer Networking',
     issuer: 'Google',
     date: 'Sep 2024',
-    image: '/certificates/google.jpg',
+    image: 'google.jpg',
     link: 'https://drive.google.com/drive/folders/1dRJtoMx671GPVag19IYGbPw1b4styQWR'
   },
   {
     title: 'Computer Communications Specialization',
     issuer: 'Coursera',
     date: 'Dec 2024',
-    image: '/certificates/coursera.jpg',
+    image: 'coursera.jpg',
     link: 'https://drive.google.com/drive/folders/1dRJtoMx671GPVag19IYGbPw1b4styQWR'
   }
 ];
@@ -44,7 +44,7 @@ export default function Certificates() {
     <section id="certificates" className="py-24 relative overflow-hidden bg-dark-950">
       {/* Background Decor */}
       <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-primary-600/10 rounded-full mix-blend-screen filter blur-[120px] -translate-x-1/2 -z-10 animate-blob"></div>
-      
+
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -70,22 +70,22 @@ export default function Certificates() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group"
             >
-              <a 
-                href={cert.link} 
-                target="_blank" 
+              <a
+                href={cert.link}
+                target="_blank"
                 rel="noopener noreferrer"
                 className="block h-full"
               >
                 <div className="glass-card p-6 rounded-2xl border border-white/5 hover:border-primary-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(59,130,246,0.2)] h-full flex flex-col relative overflow-hidden">
-                  
+
                   {/* Subtle gradient overlay on hover */}
                   <div className="absolute inset-0 bg-gradient-to-b from-primary-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  
+
                   {/* Image Container */}
                   <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-6 bg-dark-800 border border-white/10 group-hover:border-primary-500/30 transition-colors">
-                    <img 
-                      src={cert.image} 
-                      alt={cert.title} 
+                    <img
+                      src={cert.image}
+                      alt={cert.title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       onError={(e) => {
                         e.target.src = 'https://via.placeholder.com/800x600/1e293b/94a3b8?text=Certificate+Image+Pending';
@@ -98,7 +98,7 @@ export default function Certificates() {
                       </div>
                     </div>
                   </div>
-                  
+
                   <div className="flex-grow flex flex-col justify-between relative z-10">
                     <div>
                       <div className="flex justify-between items-start mb-2">
